@@ -1,0 +1,17 @@
+extends _layouts/home
+
+block content
+
+	header
+		.header-container
+			.logo
+				img(src="img/logo.png" alt="logo")
+			input(type="checkbox" id="menu-checkbox")
+			nav(role="navigation")
+				label(for="menu-checkbox" class="toggle-button" data-open="Menu" data-close="Close" onclick)
+				ul.main-menu
+					li: a(href="#") Home
+					li: a(href="#") Portfolio
+					li: a(href="#") Blog
+					li: a(href="#") About Us
+					li: a(href="#") Contact
