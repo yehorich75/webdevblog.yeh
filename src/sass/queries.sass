@@ -1,4 +1,25 @@
-@media screen and (max-width: 576px)
-	.nav-section
+@media screen and (max-width: 420px)
+	.header-container
+		width: 100%
+		display: flex
+		justify-content: space-around
+		flex-direction: column
 		.main-menu
+			display: flex
 			flex-direction: column
+			display: none
+			li 
+				width: 100%
+				font-size: 12px
+				a 
+					padding: 8px
+		.toggle-button
+			text-align: center
+			display: block
+			cursor: 
+			color: #000000
+			&::after
+				content: attr(data-open)
+		#menu-checkbox:checked + nav[role="navigation"] .main-menu
+			display: block
+			
