@@ -47,7 +47,7 @@ ul
 
 main.grid
 	display: grid
-	grid-template-rows: 592px 1fr 1fr
+	grid-template-rows: 592px auto 900px
 	grid-template-columns: repeat(12, 1fr)
 
 .top-slide
@@ -102,6 +102,7 @@ main.grid
 .portfolio
 	grid-column: 2 / span 10
 	text-align: center
+	margin-top: 80px
 	h4
 		background: $color-dark-grey
 		color: $color-yellow
@@ -120,3 +121,14 @@ main.grid
 		color: $color-dark-grey
 		text-transform: uppercase
 		font-size: 18px
+		cursor: pointer
+		margin-top: 20px
+		&:after
+			content: ' / '
+		&:last-child:after
+			content: ''
+
+.posts
+	display: grid
+	grid-template-columns: auto auto auto auto
+	margin-top: 30px
