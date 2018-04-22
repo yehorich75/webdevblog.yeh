@@ -1,5 +1,7 @@
 // @import style
 
+$color-dark-grey: #414146
+
 *
 	box-sizing: border-box
 
@@ -42,20 +44,48 @@ ul
     display: flex
 
 .top-slide
-    background: url(../img/top-slide-img.jpg)
+    background: url(../img/top-slide-img.jpg) no-repeat
     padding-top: 120px
+    padding-bottom: 120px
     h2 
         background: #ffea00
         display: inline-block
         font-size: 70px
         padding: 0 13px
+    & :nth-child(2)
+        margin-bottom: 10px
     p 
-        background: #414146
+        background: $color-dark-grey
         display: inline-block
         font-size: 24px
         color: #ffffff
         padding: 0 13px
+        margin-bottom: 3px
 
 .top-container
     width: 85%
     margin: 0 auto
+
+.specialize-container
+    width: 80%
+    margin: 0 auto
+    text-align: center
+    h3
+        font-size: 32px
+        text-transform: uppercase
+        margin-top: 40px
+    p 
+        font-size: 24px
+    .first-p
+        font-size: 20px
+        background: $color-dark-grey
+        color: #ffffff
+
+    .specialize-cards
+        display: flex
+        justify-content: space-between
+        .card
+            width: 200px
+            .bottom-card
+                position: relative
+                top: -7px
