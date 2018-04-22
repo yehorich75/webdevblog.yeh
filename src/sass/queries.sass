@@ -1,4 +1,4 @@
-@media screen and (max-width: 420px)
+@media screen and (max-width: 360px)
 	.header-container
 		width: 100%
 		display: flex
@@ -8,15 +8,15 @@
 		.main-menu
 			flex-direction: column
 			display: none
-			li 
+			li
 				width: 100%
 				font-size: 12px
-				a 
+				a
 					padding: 8px
 		.toggle-button
 			text-align: center
 			display: block
-			cursor: 
+			cursor:
 			color: #000000
 			&:after
 				content: attr(data-open)
@@ -24,10 +24,12 @@
 			display: flex
 		#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after
 			content: attr(data-close)
-		a 
+		a
 			margin-right: -65px
 		.main-menu
 			position: relative
 			top: 30px
 			right: 115px
-			
+
+	main.grid
+		grid-template-rows: 870px 1fr
